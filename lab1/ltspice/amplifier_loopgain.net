@@ -1,0 +1,43 @@
+* G:\My Drive\2020-2021\Spring\EE 308\Labs\Lab 1\ltspice\amplifier_loopgain.asc
+RV1_top 0 N003 0.1k
+RV1_bot N003 0 9.9k
+Q1 +12v N003 N005 0 2N3904
+R2 N005 -12v 620
+Q2 N001 N004 N005 0 2N3904
+R5 +12v N001 270
+Q3 N006 N002 N001 0 2N3906
+D1 N006 N009 1N4148
+D2 N009 N011 1N4148
+R7 +12v N002 5.1k
+C1 +12v N002 0.1µ
+Q4 N011 N012 N013 0 2N3904
+R6 N013 -12v 270
+R9 N012 -12v 3.3k
+C2 N012 -12v 0.1µ
+Q6 -12v N011 N010 0 2N2907
+R11 sig_out N010 5.1
+R10 N008 sig_out 5.1
+Q5 +12v N006 N008 0 2N2222
+R12 out sig_out 47
+R13 out 0 50
+R3 sig_in N004 12k
+R4 N004 0 620
+R14 N004 N007 1Meg
+RV2_top +12v N007 10k
+RV2_bot N007 -12v 10k
+R8 N002 N012 18k
+V1 0 0 SINE(0 0.3 1Meg) AC 1
+V2 +12v 0 12
+V3 0 -12v 12
+V4 sig_in 0 -0.2 AC 1
+C3 sig_in N004 1p
+.model D D
+.lib C:\Users\John McNelly\Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NPN NPN
+.model PNP PNP
+.lib C:\Users\John McNelly\Documents\LTspiceXVII\lib\cmp\standard.bjt
+;.tran 0 10u 0 10n
+.ac dec 1000 10 100Meg
+.op
+.backanno
+.end
