@@ -1,0 +1,105 @@
+Circuit: * G:\My Drive\2020-2021\Spring\EE 308\Labs\ee308\lab3\ltspice\triangle_wave_gen.asc
+
+D23: both pins shorted together -- ignoring.
+WARNING: Less than two connections to node SQUARE_IN.  This node is used by V3.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+vernier = 0.0625
+Gmin = 1.08884
+vernier = 0.03125
+vernier = 0.015625
+Gmin = 1.03122
+vernier = 0.0078125
+vernier = 0.0104167
+vernier = 0.00520833
+Gmin = 1.01988
+vernier = 0.00260417
+vernier = 0.00347222
+Gmin = 1.01305
+vernier = 0.00173611
+vernier = 0.00231481
+vernier = 0.00115741
+Gmin = 1.01085
+vernier = 0.00154321
+vernier = 0.000771604
+Gmin = 1.00871
+vernier = 0.00102881
+vernier = 0.000514403
+Gmin = 1.00715
+vernier = 0.00068587
+vernier = 0.000514403
+Gmin = 1.0059
+vernier = 0.00068587
+vernier = 0.000514402
+Gmin = 0
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+Source Step = 12.1212%
+Source Step = 19.697%
+Source Step = 27.2727%
+Source Step = 34.8485%
+Source Step = 42.4242%
+vernier = 0.375
+Source Step = 52.6515%
+Source Step = 64.0152%
+Source Step = 75.3788%
+Source Step = 86.7424%
+Source Step = 87.9853%
+Source Step = 88.1629%
+Source Step = 88.3404%
+Source Step = 88.518%
+Source Step = 88.6955%
+vernier = 0.00878906
+Source Step = 88.9175%
+Source Step = 89.1838%
+Source Step = 89.4502%
+Source Step = 89.7165%
+Source Step = 89.9828%
+vernier = 0.0131836
+Source Step = 90.3024%
+Source Step = 90.7019%
+Source Step = 91.1014%
+Source Step = 91.5009%
+Source Step = 91.9004%
+vernier = 0.0197754
+Source Step = 92.3599%
+Source Step = 92.9591%
+Source Step = 93.5584%
+Source Step = 94.1576%
+Source Step = 94.7569%
+vernier = 0.0296631
+Source Step = 95.4161%
+Source Step = 96.315%
+Source Step = 97.2138%
+Source Step = 98.1127%
+Source Step = 99.0116%
+vernier = 0.0444946
+Source Step = 99.9554%
+Source stepping succeeded in finding the operating point.
+
+
+Date: Mon May 31 12:14:27 2021
+Total elapsed time: 5.672 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 129872
+traniter = 121838
+tranpoints = 45960
+accept = 33038
+rejected = 12922
+matrix size = 112
+fillins = 181
+solver = Normal
+Thread vector: 17.8/12.9[2] 4.0/4.0[1] 2.9/2.8[1] 0.7/2.1[1]  2592/500
+Matrix Compiler1: 14.27 KB object code size  3.1/1.6/[0.7]
+Matrix Compiler2: 13.58 KB object code size  2.7/2.3/[0.9]
+
