@@ -1,0 +1,116 @@
+Circuit: * G:\My Drive\2020-2021\Spring\EE 308\Labs\ee308\lab4\ltspice\full_gen.asc
+
+D23: both pins shorted together -- ignoring.
+WARNING: Less than two connections to node SQUARE_IN.  This node is used by V3.
+Early termination of direct N-R iteration.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+vernier = 0.0625
+Gmin = 1.08884
+vernier = 0.03125
+vernier = 0.015625
+Gmin = 1.03122
+vernier = 0.0078125
+vernier = 0.00390625
+vernier = 0.00195313
+Gmin = 1.0227
+vernier = 0.00260417
+vernier = 0.00130208
+vernier = 0.000651042
+Gmin = 1.01922
+vernier = 0.000868055
+Gmin = 1.01723
+vernier = 0.00115741
+vernier = 0.000578703
+vernier = 0.000434027
+Gmin = 1.01572
+vernier = 0.000578703
+vernier = 0.000771604
+vernier = 0.000578703
+Gmin = 1.01462
+vernier = 0.000434027
+vernier = 0.000578703
+vernier = 0.000434027
+Gmin = 1.01378
+Gmin = 0
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+Source Step = 12.1212%
+Source Step = 19.697%
+Source Step = 27.2727%
+Source Step = 34.8485%
+Source Step = 42.4242%
+vernier = 0.375
+Source Step = 52.6515%
+Source Step = 64.0152%
+Source Step = 75.3788%
+Source Step = 86.7424%
+Source Step = 87.9853%
+Source Step = 88.1629%
+Source Step = 88.3404%
+Source Step = 88.518%
+Source Step = 88.6955%
+vernier = 0.00878906
+Source Step = 88.9175%
+Source Step = 89.1838%
+Source Step = 89.4502%
+Source Step = 89.7165%
+Source Step = 89.9828%
+vernier = 0.0131836
+Source Step = 90.3024%
+Source Step = 90.7019%
+Source Step = 91.1014%
+Source Step = 91.5009%
+Source Step = 91.9004%
+vernier = 0.0197754
+Source Step = 92.3599%
+Source Step = 92.9591%
+Source Step = 93.5584%
+Source Step = 94.1576%
+Source Step = 94.7569%
+vernier = 0.0296631
+Source Step = 95.4161%
+Source Step = 96.315%
+Source Step = 97.2138%
+Source Step = 98.1127%
+Source Step = 99.0116%
+vernier = 0.0444946
+Source Step = 99.9554%
+Source stepping succeeded in finding the operating point.
+
+Heightened Def Con from 8.76292e-007 to 8.771e-007
+Heightened Def Con from 8.89213e-007 +++++++++++++++++++++++++to 8.89339e-007
+Heightened Def Con from 8.89339e-007 +++++++++++++++++++to 8.90464e-007
+Heightened Def Con from 8.90464e-007 ++++++++++++++to 8.90605e-007
+Heightened Def Con from 9.09901e-007 +++++++++++++++++++++++++to 9.10916e-007
+Heightened Def Con from 9.10916e-007 +++++++++++++++++++to 9.12041e-007
+Heightened Def Con from 9.12041e-007 +++++++++++++++to 9.13166e-007
+Heightened Def Con from 9.17699e-007 to 9.20699e-007
+Heightened Def Con from 1.46756e-006 to 1.48056e-006
+Heightened Def Con from 2.04677e-006 to 2.05977e-006
+
+Date: Thu Jun 03 14:19:12 2021
+Total elapsed time: 4.036 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 27238
+traniter = 19856
+tranpoints = 2711
+accept = 1185
+rejected = 1653
+matrix size = 163
+fillins = 357
+solver = Normal
+Thread vector: 21.7/9.8[4] 48.4/14.7[4] 8.9/4.3[4] 1.0/5.3[1]  2592/500
+Matrix Compiler1:    1374 opcodes  11.4/[3.9]/4.5
+Matrix Compiler2: 21.38 KB object code size  5.3/3.6/[1.6]
+

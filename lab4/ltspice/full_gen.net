@@ -1,0 +1,99 @@
+* G:\My Drive\2020-2021\Spring\EE 308\Labs\ee308\lab4\ltspice\full_gen.asc
+XU1 N024 N022 +12v -12v N017 LT1001
+Q1 N008 N017 N022 0 2N3904
+Q2 i_sink N017 N026 0 2N3904
+R3 N022 -12v 1k
+R4 N026 -12v 1k
+Q3 N008 N008 N006 0 2N3906
+Q4 i_source N008 N007 0 2N3906
+R5 +12v N006 1k
+R6 +12v N007 1k
+V1 +12v 0 12
+V2 0 -12v 12
+D1 i_source square_in_buf 1N5711
+D2 i_source tcap 1N5711
+D3 square_in_buf i_sink 1N5711
+D4 tcap i_sink 1N5711
+C1 tcap 0 1.36n IC=0
+V3 square_in 0 PULSE(-1 1 0 1n 1n {(1/f)*0.75} {1/f} 2)
+J1 N004 N005 triangle_out J310
+R10 N018 -12v 300
+R7 +12v N004 1k
+R11 triangle_out 0 1k
+J2 triangle_out -12v N018 J310
+V4 N024 0 -6
+XU2 0 N034 +12v -12v N031 LT1001
+R1 N031 N034 9k
+R2 N034 N035 1k
+C2 N031 N030 1µ IC=0
+Q6 N003 triangle_out N013 0 2N3904
+Q7 N002 triangle_comp N013 0 2N3904
+Q8 N013 N021 N025 0 2N3904
+R12 N025 -12v 2k
+D5 N003 N002 1N4148
+D6 N002 N003 1N4148
+R15 +12v N003 4k
+R16 +12v N002 4k
+V7 N021 0 -3.4
+Q9 square_fb N002 N001 0 2N3906
+Q10 square_out N003 N001 0 2N3906
+R17 +12v N001 910
+R18 square_out -12v 2.7k
+D7 square_fb N015 1N4148
+D8 N015 N019 1N4148
+D9 N019 0 1N4148
+D10 0 N020 1N4148
+D11 N020 N016 1N4148
+D12 N016 square_fb 1N4148
+R19 square_fb -12v 2.7k
+D13 N011 triangle_comp 1N4148
+D14 N011 square_fb 1N4148
+D15 triangle_comp N014 1N4148
+D16 square_fb N014 1N4148
+R20 N010 N011 13k
+R21 +12v N010 1.1k
+R22 N014 N023 13k
+R23 N023 -12v 1.1k
+R24 triangle_comp 0 499
+D18 0 square_out 1N5711
+D19 square_out 0 1N5711
+XU3 N030 N035 +12v -12v N035 LT1001
+D21 N012 triangle_out 1N914
+D22 triangle_out N012 1N914
+D23 triangle_out triangle_out 1N914
+Q12 +12v N009 square_in_buf 0 2N3904
+R13 square_in_buf -12v 1k
+R8 N009 square_fb 300
+R9 N005 tcap 100
+R14 N036 triangle_out 1.3k
+R25 0 N036 1k
+Q5 N029 N036 N037 0 2N3904
+R26 N038 N037 10
+R27 N039 N038 10
+Q11 N032 0 N039 0 2N3904
+R28 +12v N029 1k
+R29 +12v N032 1k
+Q13 N038 N041 N040 0 2N3904
+R30 N040 -12v 500
+XU4 N042 N040 +12v -12v N041 LT1001
+V5 N042 0 -9
+R31 N033 N032 12Meg
+R32 0 N033 1Meg
+R33 N027 N029 12Meg
+R34 N028 N027 1Meg
+XU6 N033 N027 +12v -12v N028 LF356/NS
+.model D D
+.lib C:\Users\John McNelly\Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NPN NPN
+.model PNP PNP
+.lib C:\Users\John McNelly\Documents\LTspiceXVII\lib\cmp\standard.bjt
+.model NJF NJF
+.model PJF PJF
+.lib C:\Users\John McNelly\Documents\LTspiceXVII\lib\cmp\standard.jft
+.tran 0 {5/f} {0/f} {1/f/100}
+.param f=2Meg
+.MODEL 1N5711 D (IS=19.7n N=1.51 BV=93.3 IBV=50n RS=6.27 CJO=1.8p VJ=.75 M=.333 XTI=2 EG=.69 TT=10.8p type=Schottky)
+.include LF356.MOD
+.lib LTC.lib
+.backanno
+.end
