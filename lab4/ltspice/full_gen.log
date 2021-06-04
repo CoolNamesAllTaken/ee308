@@ -85,32 +85,22 @@ vernier = 0.0444946
 Source Step = 99.9554%
 Source stepping succeeded in finding the operating point.
 
-Heightened Def Con from 8.76292e-007 to 8.771e-007
-Heightened Def Con from 8.89213e-007 +++++++++++++++++++++++++to 8.89339e-007
-Heightened Def Con from 8.89339e-007 +++++++++++++++++++to 8.90464e-007
-Heightened Def Con from 8.90464e-007 ++++++++++++++to 8.90605e-007
-Heightened Def Con from 9.09901e-007 +++++++++++++++++++++++++to 9.10916e-007
-Heightened Def Con from 9.10916e-007 +++++++++++++++++++to 9.12041e-007
-Heightened Def Con from 9.12041e-007 +++++++++++++++to 9.13166e-007
-Heightened Def Con from 9.17699e-007 to 9.20699e-007
-Heightened Def Con from 1.46756e-006 to 1.48056e-006
-Heightened Def Con from 2.04677e-006 to 2.05977e-006
 
-Date: Thu Jun 03 14:19:12 2021
-Total elapsed time: 4.036 seconds.
+Date: Thu Jun 03 23:56:53 2021
+Total elapsed time: 2.673 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 27238
-traniter = 19856
-tranpoints = 2711
-accept = 1185
-rejected = 1653
+totiter = 11199
+traniter = 3677
+tranpoints = 1202
+accept = 959
+rejected = 243
 matrix size = 163
-fillins = 357
+fillins = 363
 solver = Normal
-Thread vector: 21.7/9.8[4] 48.4/14.7[4] 8.9/4.3[4] 1.0/5.3[1]  2592/500
-Matrix Compiler1:    1374 opcodes  11.4/[3.9]/4.5
-Matrix Compiler2: 21.38 KB object code size  5.3/3.6/[1.6]
+Thread vector: 34.8/11.9[4] 5.4/3.9[4] 4.0/3.0[4] 1.5/7.4[1]  2592/500
+Matrix Compiler1: 25.41 KB object code size  6.7/2.8/[1.7]
+Matrix Compiler2: 21.48 KB object code size  4.1/3.1/[1.8]
 

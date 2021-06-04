@@ -1,0 +1,12 @@
+* G:\My Drive\2020-2021\Spring\EE 308\Labs\ee308\lab3\ltspice\jfet_buffer.asc
+J1 N001 N002 N003 J310
+R1 N004 -12v 300
+R2 +12v N001 1k
+J2 N003 -12v N004 J310
+V1 N002 0 AC 1
+.model NJF NJF
+.model PJF PJF
+.lib C:\Users\John McNelly\Documents\LTspiceXVII\lib\cmp\standard.jft
+.ac dec 1000 10 10Meg
+.backanno
+.end
